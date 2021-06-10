@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    <!-- meta tags importantes -->
+    <meta name="description" content="descrição da página">
+    <meta name="keywords" content="palavras, chave, termos chave">
+    <title> T&K Agência </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+<!-- css externo -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- css parte responsiva do site/externo  -->
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/responsivo.css">
+  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+
+</head>
+
+<body id="inicio">
+
+  <!-- menu-->
+
+  <nav id="navbar">
+    <h1 class="logo">
+      <span class="texto-primario">
+        <i class=""></i> T&K
+      </span> Agência 
+    </h1>
+    <ul>
+      <li><a href="#inicio"> Inicio </a></li>
+      <li><a href="#servicos"> Serviços </a></li>
+      <li><a href="#quem"> Quem Somos </a></li>
+      <li><a href="#contato"> Contatos </a></li>
+    </ul>
+  </nav>
+
+  <!-- Principal -->
+  <header id="principal">
+    <div class="conteudo-principal">
+      <h1 class="cabecalho">
+        Criamos Sonhos 
+      </h1>
+      <p class="paragrafo">
+        AGÊNCIA DE DESENVOLVIMENTO DE SITES - 
+
+        Projetamos, desenvolvemos e gerenciamos sites de alto impacto que geram leads, vendem produtos e contam histórias.
+
+      </p>
+      <a href="#servicos" class="btn">Saiba Mais</a>
+    </div>
+  </header>
+
+  <!-- serviços -->
+  <section id="servicos" class="bg-light py-1">
+    <div class="container">
+      <h2 class="cabecalho-m texto-centralizado"><span class="texto-primario">O que</span> fazemos</h2>
+      <div class="itens">
+        <div class="item">
+          <i class="fas fa-university fa-2x"></i>
+          <div>
+            <h3>Sites</h3>
+            <p> Fazemos Todos os Tipos de Sites Paginas de Vendas, Sites Institucionas, Blogs , Portifólios etc...</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fas fa-book-reader fa-2x"></i>
+          <div>
+            <h3> Marketing Digital </h3>
+            <p> Trazemos Tráfego para sua pagina seja orgânico ou trafego pago </p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fas fa-pencil-alt fa-2x"></i>
+          <div>
+            <h3>SEO</h3>
+            <p> Fazemos seu site se destacar nos buscadores como o google </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quem somos -->
+  <section id="quem">
+    <div class="quem-img"></div>
+    <div class="quem-texto bg-dark p-2">
+      <h2 class="cabecalho-m">
+        <span class="texto-primario">Quem</span> Somos</h2>
+      <p>Somos T&K Agência, uma Empresa especializada em criação de sites, com visuais incriveis e modernos, estamos a 20 Anos no mercado e fazendo a Diferença </p>
+      <h3>Nosso Time</h3>
+      <ul class="lista">
+        <li>Gabriel Oliveira: Desenvolvedor Web</li>
+        <li>Angélica Diniz: SEO </li>
+        <li>Arya Andrade: CEO </li>
+        <li>Mariana Nunes: Marketing</li>
+        <li>Kara Stark: UX/UI Designer </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Clientes -->
+
+   <!-- Iniciando a área do formulário -->
+   <section class="fundo-form" id="contato">
+    <div class="formulario">
+        <h2>Contato</h2>
+        <p>Fale Conosco </p>
+
+        <!-- Criando o formulário -->
+        <form action="envia.php" method="post">
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="nome completo" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="digite seu e-mail" required>
+
+
+            <label for="fone">Telefone:</label>
+            <input type="tel" name="fone" id="fone" placeholder="DDD + Fone">
+
+            <label for="msg">Mensagem:</label>
+            <textarea name="msg" id="msg" rows="10" cols="40" placeholder="digite sua mensagem" required></textarea>
+
+            <button type="submit" class="enviar">Enviar mensagem</button>
+        </form>
+
+    </div>
+</section>
+  <!-- Fim do formulário -->
+
+   <!-- Footer -->
+
+   <div class="fundo-rodape">
+    <footer>
+        <h2> T&K Agência </h2>
+        <p>  <br>
+        São Paulo - Brasil - 2021 - Todos os Direitos Reservados</p>
+    </footer>
+</div>
+  
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- Arquivo js -->
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
